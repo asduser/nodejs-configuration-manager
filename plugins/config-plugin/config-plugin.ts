@@ -29,10 +29,8 @@ export class ConfigPlugin extends BasePlugin implements Settings.IPlugin {
                 break;
         }
 
-        fs.copy(configFile, options.targetCfg, function (err) {
-            if (err) return console.error(err);
-            console.log("Application config has been updated.")
-        });
+        fs.copySync(configFile, options.targetCfg);
+        console.log("Application config has been updated.");
 
         return true;
 

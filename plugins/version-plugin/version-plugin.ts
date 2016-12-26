@@ -9,13 +9,8 @@ export class VersionPlugin extends BasePlugin implements Settings.IPlugin {
 
     public specify(flags?: string[]): boolean {
 
-        jsonfile.writeFile(path, data, (err) => {
-            if (err) {
-                console.log(err);
-            } else {
-                console.log(`Build #${version} successfully created!`);
-            }
-        });
+        jsonfile.writeFileSync(path, data, {spaces: 2});
+        console.log(`Build #${version} successfully created!`);
 
         return true;
 
