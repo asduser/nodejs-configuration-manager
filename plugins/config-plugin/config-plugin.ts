@@ -1,5 +1,6 @@
 import {Settings} from "../../core/settings";
 import {Helpers} from "../../core/helpers/index";
+import {BasePlugin} from "../base/base-plugin";
 const fs = require('fs-extra');
 const options = {
     devCfg: './plugins/config-plugin/data/config_dev.json', // root category is build-manager
@@ -7,16 +8,16 @@ const options = {
     targetCfg: '../src/config/app.json' // root category is build-manager
 };
 
-export class ConfigPlugin implements Settings.IPlugin {
+export class ConfigPlugin extends BasePlugin implements Settings.IPlugin {
 
     public specify(flags: string[]): boolean {
 
         let modeFlag, buildFlag;
         if (flags.length == 1) {
             buildFlag = flags[0] == Helpers.Flags.flag.defFlag ? Helpers.Flags.flag.devFlag : Helpers.Flags.flag.prodFlag;
+        } else {
+            buildFlag = flags[1];
         }
-
-        console.log(`Initialized config plugin with ${buildFlag}`);
 
         let configFile: string;
         switch (true) {

@@ -1,7 +1,16 @@
 export class MessageHelper {
     
+    private static pluginInitializationLogging: boolean = true;
+    
     public static showIncorrectMode(): void {
         incorrectMode();
+    }
+
+    public static statusMsg(classConstructor: Function): void {
+        if (MessageHelper.pluginInitializationLogging) {
+            const ctorName = classConstructor.toString().match(/\w+/g)[1];
+            console.log(`'${ctorName}' plugin initialized.`);
+        }
     }
     
 }
@@ -19,4 +28,5 @@ const incorrectMode = () => {
     console.log('a) ts-node init-builder -def;');
     console.log('b) ts-node init-builder -light;');
     console.log('c) ts-node init-builder -full -prod;');
+    console.log('c) ts-node init-builder -full -dev;');
 };

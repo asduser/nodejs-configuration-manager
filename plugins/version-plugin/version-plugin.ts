@@ -1,14 +1,13 @@
 import {Settings} from "../../core/settings";
+import {BasePlugin} from "../base/base-plugin";
 const jsonfile = require('jsonfile');
 const path = '../src/config/cache-manager/config.json'; // root category is build-manager
 const version = new Date().getTime();
 const data = { version: `${version}` };
 
-export class VersionPlugin implements Settings.IPlugin {
+export class VersionPlugin extends BasePlugin implements Settings.IPlugin {
 
     public specify(flags?: string[]): boolean {
-
-        console.log(`Initialized version plugin`);
 
         jsonfile.writeFile(path, data, (err) => {
             if (err) {

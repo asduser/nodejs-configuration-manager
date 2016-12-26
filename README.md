@@ -26,6 +26,9 @@ Environment: `-dev`, `-prod`.
 
 #### `ts-node run -full -prod`
 - execute all existing plugins list and specify `production` environment type to generate an appropriate application settings.
+
+#### `ts-node run -full -prod`
+- all plugins list but apply an internal behaviour for `development` environment.
   
 ## Installation
 
@@ -36,7 +39,7 @@ Environment: `-dev`, `-prod`.
 
 > **Plugin**
 
-Each functional entity in this module is a "Plugin". It's a simple typescript class, which implements IPlugin interface.
+Each functional entity in this module is a "Plugin". It's a simple typescript class, which extends *BasePlugin* class & implements *IPlugin* interface.
 
 The main purpose - receive arguments list and execute an appropriate behaviour after.
 

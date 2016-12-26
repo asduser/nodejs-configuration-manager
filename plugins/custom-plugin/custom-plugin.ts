@@ -1,11 +1,10 @@
 import {Settings} from "../../core/settings";
 import {Helpers} from "../../core/helpers/index";
+import {BasePlugin} from "../base/base-plugin";
 
-export class CustomPlugin implements Settings.IPlugin {
+export class CustomPlugin extends BasePlugin implements Settings.IPlugin {
 
     public specify(flags?: string[]): boolean {
-
-        console.log(`Custom plugin created.`);
 
         let envFlag = flags[1];
         switch (envFlag) {
