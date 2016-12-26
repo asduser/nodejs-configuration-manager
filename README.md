@@ -18,16 +18,16 @@ Environment: `-dev`, `-prod`.
 
 ## CLI Commands
 
-#### `ts-node run -def`
+#### `run -def`
 - execute default plugins list (defined in *plugins.ts*).
 
-#### `ts-node run -light`
+#### `run -light`
 - execute a light-version with limited plugins number.
 
-#### `ts-node run -full -prod`
+#### `run -full -prod`
 - execute all existing plugins list and specify `production` environment type to generate an appropriate application settings.
 
-#### `ts-node run -full -prod`
+#### `run -full -prod`
 - all plugins list but apply an internal behaviour for `development` environment.
   
 ## Installation
@@ -55,7 +55,7 @@ Special static classes which allow to use common methods to manage lists, messag
 
 An entry file which receives arguments list from CLI inside node.js script.
 
-**Note**: you may just call init.bat file to get the same result above. 
+**Note**: you may just call `ts-node initializer %mode% %env%` *\*.ts* file to get the same result above. 
 
 ## Licence
 
