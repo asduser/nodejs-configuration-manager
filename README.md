@@ -27,13 +27,18 @@ Environment: `-dev`, `-prod`.
 #### `run -full -prod`
 - execute all existing plugins list and specify `production` environment type to generate an appropriate application settings.
 
-#### `run -full -prod`
+#### `run -full -dev`
 - all plugins list but apply an internal behaviour for `development` environment.
   
 ## Installation
 
-1. `typings install`
-2. `npm install`
+1. `typings install`.
+2. `npm install`.
+
+**Info:** be sure, that you have installed typescript & ts-node globally. If not, put hte followings commands in terminal:
+
+1. `npm install typescript@next -g`.
+2. `npm install ts-node -g`.  
 
 ## Structure
 
@@ -55,7 +60,7 @@ Special static classes which allow to use common methods to manage lists, messag
 
 An entry file which receives arguments list from CLI inside node.js script.
 
-**Note**: you may just call `ts-node initializer %mode% %env%` *\*.ts* file to get the same result above. 
+**Note**: you may just call `ts-node initializer %mode% %env%` *.ts* file to get the same results above. 
 
 ## Licence
 
