@@ -11,12 +11,13 @@ export class ConfigurationManager {
 
         let plugCounter = 0;
         let plugins = ConfigurationManager.getPluginsList(args);
-        plugins.forEach((pl) => {
+        /*plugins.forEach((pl) => {
             pl.specify(args);
-        });
+        });*/
         let availablePlugin = plugins.length ? plugins[plugCounter] : false;
 
         while (availablePlugin) {
+            availablePlugin.specify(args);
             plugCounter++;
             availablePlugin = plugins[plugCounter];
         }
