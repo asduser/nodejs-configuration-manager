@@ -8,10 +8,10 @@
 
 ---
 
-✓ Typescript on server-side.<br>
-✓ It doesn't depend on webpack, grunt, gulp and other tools, but allows to run them inside itself.<br>
-✓ Simplifies build process for dev\prod environments.<br>
-✓ Works with different project types: Angular2, React, Angular.js, Native JavaScript etc.<br>
+✓ Typescript on server-side.<br/>
+✓ It doesn't depend on webpack, grunt, gulp and other tools, but allows to run them inside itself.<br/>
+✓ Simplifies build process for dev\prod environments.<br/>
+✓ Works with different project types: Angular2, React, Angular.js, Native JavaScript etc.<br/>
 ✓ Extensible internal plugins, which may be used together or separately.
 
 ## CLI Commands
