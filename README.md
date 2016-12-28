@@ -6,7 +6,15 @@
 
 > Scalable and flexible *ts-node* utility to manage different application configurations to simplify the main build process.
 
-## Using
+---
+
+✓ Typescript on server-side.<br>
+✓ It doesn't depend on webpack, grunt, gulp and other tools, but allows to run them inside itself.<br>
+✓ Simplifies build process for dev\prod environments.<br>
+✓ Works with different project types: Angular2, React, Angular.js, Native JavaScript etc.<br>
+✓ Extensible internal plugins, which may be used together or separately.
+
+## CLI Commands
 
 First parameter is mode, the second one - environment type.
 
@@ -16,7 +24,7 @@ Environment: `-dev`, `-prod`.
 
 **Note**: to run default sequence plugins with predefined options use a special flag `-def`.
 
-## CLI Commands
+---
 
 #### `run -def`
 - execute default plugins list (defined in *plugins.ts*).
