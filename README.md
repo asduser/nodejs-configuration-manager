@@ -52,12 +52,9 @@ Environment: `-dev`, `-prod`.
 
 > **Plugin**
 
-Each functional entity in this module is a "Plugin". It's a simple typescript class, which extends *BasePlugin* class & implements *IPlugin* interface.
-
-The main purpose - receive arguments list and execute an appropriate behaviour after.
-
-All plugins included into the `plugins` directory and injected into the index.ts file there (to simplify handling their behaviour in the future).
-
+Each functional entity in this module is a "Plugin". It's a simple typescript class, which extends *BasePlugin* class & implements *IPlugin* interface.<br/>
+The main purpose - receive arguments list and execute an appropriate behaviour after.<br/>
+All plugins included into the `plugins` directory and injected into the index.ts file there (to simplify handling their behaviour in the future).<br/>
 Each plugin should return `true` if it is valid.
 
 > **Helpers**
@@ -66,8 +63,7 @@ Special static classes which allow to use common methods to manage lists, messag
 
 > **Initializer**
 
-An entry file which receives arguments list from CLI inside node.js script.
-
+An entry file which receives arguments list from CLI inside node.js script.<br/>
 **Note**: you may just call `ts-node initializer %mode% %env%` *.ts* file to get the same results above. 
 
 ## Licence

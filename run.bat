@@ -6,7 +6,7 @@ set mode=%1
 set env=%2
 
 call :%mode%_case_mode
-if errorlevel 1 call :incorrect_mode
+if errorlevel 1 goto :eof
 exit /b
 
 :-full_case_mode
@@ -19,9 +19,4 @@ exit /b
     call ts-node initializer -def
     goto end_case_mode
 :end_case_mode
-    echo 'Complete with success.'
-    goto :eof
-
-:incorrect_mode
-    echo 'Unknown mode - "%mode%"'
-    exit /b
+    pause
