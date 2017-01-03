@@ -2,10 +2,10 @@
   "name": "configuration-manager",
   "version": "0.1.0",
   "dependencies": {
+    "@types/node": "^6.0.42",
     "fs-extra": "^1.0.0",
     "jsonfile": "^2.4.0",
     "ts-node": "^1.7.2",
-    "@types/node": "^6.0.42",
     "typescript": "^2.0.3"
   }
 }

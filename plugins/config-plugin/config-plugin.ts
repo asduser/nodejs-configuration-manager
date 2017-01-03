@@ -3,9 +3,9 @@ import {Helpers} from "../../core/helpers/index";
 import {BasePlugin} from "../base/base-plugin";
 const fs = require('fs-extra');
 const options = {
-    devCfg: './plugins/config-plugin/data/config_dev.json', // root category is build-manager
-    prodCfg: './plugins/config-plugin/data/config_prod.json', // root category is build-manager
-    targetCfg: '../src/config/app.json' // root category is build-manager
+    devCfg: './plugins/config-plugin/data/config_dev.json', // root directory is configuration-manager directory 
+    prodCfg: './plugins/config-plugin/data/config_prod.json',
+    targetCfg: './dist/app.json'
 };
 
 export class ConfigPlugin extends BasePlugin implements Settings.IPlugin {
