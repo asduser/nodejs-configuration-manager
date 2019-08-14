@@ -2,7 +2,7 @@
 [![TypeScript](https://badges.frapsoft.com/typescript/version/typescript-next.svg?v=101)](https://github.com/ellerbrock/typescript-badges/)
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)]()
 
-# Node.js - Manager
+# Node.js - Configuration Manager
 
 > Scalable and flexible *ts-node* utility to manage different application configurations to simplify the main build process.
 
